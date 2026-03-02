@@ -1,6 +1,7 @@
 #The source code for the main game
-
+#This is a work in progress one last thing is remaining
 #importing all the hangman figures and list of words
+
 from body import figure_1
 from body import figure_2
 from body import figure_3
@@ -79,4 +80,5 @@ while user_input == True:
     else:
         user_input = False
         print("Have a nice day")
+
         
