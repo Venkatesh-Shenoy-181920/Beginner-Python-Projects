@@ -10,14 +10,18 @@ num2 = int(input("Enter the ending range for the number: "))
 
 def game():
     num = number(num1, num2)
-    user_input = int(input(f"Enter a number between {num1} and {num2}: "))
-    while user_input != num:
+    rounds = int(input('Enter the number of rounds you want to play: '))
+    while rounds != 0:
         user_input = int(input(f"Enter a number between {num1} and {num2}: "))
         if user_input > num:
             print("The actual number is less than your guess.")
         elif user_input < num:
             print("The actual number is less than your guess.")
-    
-    print("Yay you have guessed it correctly!!!")
+        elif user_input == num:
+             print("YOU WIN")
+             break
+        rounds -= 1
+
+    print("Game Over")
 
 game()
