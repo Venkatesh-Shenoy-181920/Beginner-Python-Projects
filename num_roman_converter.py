@@ -8,6 +8,6 @@ def converter(num):
         return nums[num]
 
 print('WELCOME\nPLEASE ENTER A NUMBER BETWEEN 1 AND 10')
-number = int(input('Enter the number: '))
+number = input('Enter the number: ')
 roman_num = converter(number)
 print(f"The Roman Number for {number} is {roman_num}")
